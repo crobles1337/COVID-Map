@@ -1,0 +1,31 @@
+Backend
+1. Collect string of information for each state
+- jsonify
+
+2. Parse the information by county
+
+3. Map each county to a coordinate 
+-I can either do this while I am doing the next part or save this into a dictionary which seems redundant
+
+4. Iterate through counties and
+
+5. Graphics Idea 1: Create hover chart
+-Could either be basic chart using Bokeh or Seaborn/pandas
+-Interactive SVG using Pygal or Plot.ly but may slow it down, be unnecessary
+
+
+To do:
+1. Figure out how to make custom icons
+2. Pick best chart making library and make chart on click (may require going into the HTML)
+3. Write functions, modularize it as best as possible
+4. Functionality to highlight a county/actively divide them (whether through an overlay, or basic map feature)
+5. Search functionality to find counties, graphs w/out chart
+6. search functionality that drops you onto correct part of chart
+7. Functionality to differentiate between clicking on a county vs state vs country (could be through different "clickers")
+8. How to give variable parameters into COVID-API
+XXX9. Is there way to make an HTML file a popup/tooltip/icon in folium? Yes via https://gis.stackexchange.com/questions/185897/how-can-i-include-html-in-a-folium-marker-popup or possibly folium.html if this doesn't work
+10. Make chart popup more aesthetic
+11. Pick a more aesthetic color theme to map 
+12. Maybe make it into a heat map, to show which areas are "cooling down" and which are "heating up" by using a simple regression line slope and plotting that to a different RBG value (red to blue slider, may be best if I have partially transparent markers )
+13. Chloropleth for state differentation and transparent delineators/heat maps
+14. How to create new charts onclick for popup?
